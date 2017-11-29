@@ -13,6 +13,7 @@ class LBCPReadModuleClass extends FLBuilderModule {
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.
         ));
+        $this->add_css( 'font-awesome' );
     }
 
 }
