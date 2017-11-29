@@ -39,6 +39,9 @@ Displays the user profile in Beaver Builder enabled page.
 You need Lite, Pro, or Agency for this to work.
 
 == Change Log ==
+= 1.0.2 =
+changed the updater
+
 = 1.0.1 =
 Added Font Awesome to the CSS queue.
 Added connect icon settings.

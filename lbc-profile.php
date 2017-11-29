@@ -2,7 +2,7 @@
 /**
  * Plugin Name: User Profile Add on
  * Description: Add-on for beaver builder to display member profile.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Paolo Gallardo
  * Author URI: http://www.paologallardo.com
  */
@@ -11,7 +11,7 @@
  $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
  	'https://github.com/payatola2287/lbc-profile',
  	__FILE__,
- 	'lbc-users'
+ 	'lbc-profile'
  );
 
 define( 'LBCP_MODULES_DIR', plugin_dir_path( __FILE__ ) );
