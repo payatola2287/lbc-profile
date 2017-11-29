@@ -2,7 +2,7 @@
 /**
  * Plugin Name: User Profile Add on
  * Description: Add-on for beaver builder to display member profile.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Paolo Gallardo
  * Author URI: http://www.paologallardo.com
  */

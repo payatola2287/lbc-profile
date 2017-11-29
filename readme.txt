@@ -37,3 +37,9 @@ Displays the user profile in Beaver Builder enabled page.
 == Frequently Asked Questions ==
 = What versions of Beaver Builder do I need? =
 You need Lite, Pro, or Agency for this to work.
+
+== Change Log ==
+= 1.0.1 =
+Added Font Awesome to the CSS queue.
+Added connect icon settings.
+Added connect icons.

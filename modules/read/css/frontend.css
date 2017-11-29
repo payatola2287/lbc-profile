@@ -2,3 +2,12 @@
 .user-description{
   margin: 0;
 }
+.user-connect{
+  margin-top: 10px;
+}
+.icon-link{
+  display: inline-block;
+}
+.icon-link + .icon-link{
+  margin-left: 15px;
+}

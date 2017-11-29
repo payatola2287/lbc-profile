@@ -24,3 +24,6 @@
   font-size: <?php echo $settings->bio_line_height; ?>;
   text-transform: <?php echo $settings->bio_transform; ?>;
 }
+.icon-link .fa{
+  color: #<?php echo $settings->icon_color; ?>;
+}

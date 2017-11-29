@@ -73,6 +73,35 @@ FLBuilder::register_module( 'LBCPReadModuleClass',apply_filters( 'lbc-profile-re
           ),
         )
       ),
+      'connect-styling-section' => array(
+        'title' => __( 'Icons','fl-builder' ),
+        'fields' => array(
+          'icon_color' => array(
+            'label' => __( 'Icon Color','fl-builder' ),
+            'type' => 'color',
+            'default' => '000',
+            'show_reset' => true,
+            'preview' => array(
+              'type' => 'css',
+              'selector' => '.icon-link',
+              'property' => 'color'
+            )
+          ),
+          'icon_size' => array(
+            'label' => __( 'Icon Size','fl-builder' ),
+            'type' => 'select',
+            'options' => array(
+              'small' => __( 'Small','fl-builder' ),
+              'fa-lg' => __( 'Large','fl-builder' ),
+              'fa-2x' => __( '2x','fl-builder' ),
+              'fa-3x' => __( '3x','fl-builder' ),
+              'fa-4x' => __( '4x','fl-builder' ),
+              'fa-5x' => __( '5x','fl-builder' )
+            ),
+            'default' => 'small'
+          )
+        )
+      ),
       'background-styling-section' => array(
         'title' => __( 'Box','fl-builder' ),
         'fields' => array(
