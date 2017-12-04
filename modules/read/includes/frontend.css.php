@@ -1,9 +1,19 @@
+<?php
+  $global_settings = FLBuilderModel::get_global_settings();
+?>
 .user-data-container{
   background: #<?php echo $settings->box_background; ?>;
   border-style: <?php echo $settings->border_type; ?>;
   border-width: <?php echo $settings->border_width; ?>;
   border-color: #<?php echo $settings->border_color; ?>;
   padding: <?php echo $settings->box_padding; ?>;
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+-webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  flex-direction: column;
 }
 .user-name{
   color: #<?php echo $settings->name_text_color; ?>;
@@ -26,4 +36,25 @@
 }
 .icon-link .fa{
   color: #<?php echo $settings->icon_color; ?>;
+}
+aside.user-data-row,
+section.user-data-row{
+  padding: 0 15px;
+  width: 100%;
+}
+@media screen and (min-width:<?php echo $global_settings->responsive_breakpoint; ?>px){
+
+}
+@media screen and (min-width:<?php echo $global_settings->medium_breakpoint; ?>px){
+  aside.user-data-row{
+    width: 30%;
+    padding: 0 15px;
+  }
+  section.user-data-row{
+    width: 70%;
+    padding:
+  }
+  .user-data-container{
+    flex-direction: row;
+  }
 }

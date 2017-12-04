@@ -39,6 +39,11 @@ Displays the user profile in Beaver Builder enabled page.
 You need Lite, Pro, or Agency for this to work.
 
 == Change Log ==
+
+= 1.0.4 =
+changed the page layout
+added avatar
+
 = 1.0.2 =
 changed the updater
 
