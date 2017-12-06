@@ -40,6 +40,10 @@ You need Lite, Pro, or Agency for this to work.
 
 == Change Log ==
 
+= 1.0.5 =
+added designation, video embed
+added styling and typography settings for designation
+
 = 1.0.4 =
 changed the page layout
 added avatar

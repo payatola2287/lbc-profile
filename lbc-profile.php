@@ -2,7 +2,7 @@
 /**
  * Plugin Name: User Profile Add on
  * Description: Add-on for beaver builder to display member profile.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Paolo Gallardo
  * Author URI: http://www.paologallardo.com
  */
@@ -13,6 +13,7 @@
  	__FILE__,
  	'lbc-profile'
  );
+ require 'class-user-profile.php';
 
 define( 'LBCP_MODULES_DIR', plugin_dir_path( __FILE__ ) );
 define( 'LBCP_MODULES_URL', plugins_url( '/', __FILE__ ) );

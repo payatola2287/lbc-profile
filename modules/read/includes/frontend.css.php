@@ -34,6 +34,15 @@
   font-size: <?php echo $settings->bio_line_height; ?>;
   text-transform: <?php echo $settings->bio_transform; ?>;
 }
+.user-designation{
+  color: #<?php echo $settings->designation_text_color; ?>;
+  text-align: <?php echo $settings->designation_text_alignment; ?>;
+  font-family: <?php echo ( 'Default' == $settings->designation_font['family'] ) ? 'inherit' : $settings->designation_font['family'] ; ?>;
+  font-weight: <?php echo ( 'Default' == $settings->designation_font['weight'] ? 'inherit' : $settings->designation_font['weight'] ); ?>;
+  font-size: <?php echo $settings->designation_font_size; ?>;
+  font-size: <?php echo $settings->designation_line_height; ?>;
+  text-transform: <?php echo $settings->designation_transform; ?>;
+}
 .icon-link .fa{
   color: #<?php echo $settings->icon_color; ?>;
 }

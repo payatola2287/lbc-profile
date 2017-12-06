@@ -50,6 +50,27 @@ FLBuilder::register_module( 'LBCPReadModuleClass',apply_filters( 'lbc-profile-re
             'label' => __( 'Name Margin','fl-builder' ),
             'description' => __( 'Include unit.','fl-builder' )
           ),
+          'designation_text_color' => array(
+            'type' => 'color',
+            'default' => '000',
+            'label' => __( 'Designation Color','fl-builder' ),
+            'show_reset' => true,
+            'preview' => array(
+              'type' => 'css',
+              'selector' => '.user-name',
+              'property' => 'color'
+            )
+          ),
+          'designation_text_alignment' => array(
+            'type' => 'select',
+            'options' => array(
+              'left' => __( 'Left','fl-builder' ),
+              'center' => __( 'Center','fl-builder' ),
+              'right' => __( 'Right','fl-builder' )
+            ),
+            'default' => 'left',
+            'label' => __( 'Designation Alignment','fl-builder' )
+          ),
           'bio_text_color' => array(
             'type' => 'color',
             'default' => '000',
@@ -195,6 +216,42 @@ FLBuilder::register_module( 'LBCPReadModuleClass',apply_filters( 'lbc-profile-re
             'description' => __( 'You can leave the units.','fl-builder' )
           ),
           'name_transform' => array(
+            'type' => 'select',
+            'options' => array(
+              'none' => __( 'Default','fl-builder' ),
+              'uppercase' => __( 'UPPERCASE','fl-builder' ),
+              'lowercase' => __( 'lowercase','fl-builder' ),
+              'capitalize' => __( 'Capitalize','fl-builder' )
+            ),
+            'label' => __( 'Text Transform','fl-builder' ),
+            'default' => 'none'
+          ),
+        )
+      ),
+      'designation-typo-section' => array(
+        'title' => __( 'Designation', 'fl-builder' ),
+        'fields' => array(
+          'designation_font' => array(
+            'type' => 'font',
+            'default' => array(
+              'family' => 'Default',
+              'weight' => 'Default'
+            ),
+            'label' => __( 'Font Family','fl-builder' )
+          ),
+          'designation_font_size' => array(
+            'type' => 'text',
+            'default' => '16px',
+            'label' => __( 'Font Size','fl-builder' ),
+            'description' => __( 'Include units.','fl-builder' )
+          ),
+          'designation_line_height' => array(
+            'type' => 'text',
+            'default' => '1',
+            'label' => __( 'Line Height','fl-builder' ),
+            'description' => __( 'You can leave the units.','fl-builder' )
+          ),
+          'designation_transform' => array(
             'type' => 'select',
             'options' => array(
               'none' => __( 'Default','fl-builder' ),

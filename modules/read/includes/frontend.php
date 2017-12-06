@@ -9,6 +9,8 @@
   $gplus = get_user_meta( $user->ID,'googeplus', true );
   $twitter = get_user_meta( $user->ID,'twitter', true );
   $facebook = get_user_meta( $user->ID,'facebook', true );
+  $designation = get_user_meta( $user->ID,'designation', true );
+  $video_embed = get_user_meta( $user->ID,'video_embed', true );
 ?>
 
 <div class="user-data-container">
@@ -36,6 +38,14 @@
   </aside>
   <section class="user-data-row">
     <p class="user-name"><?php echo $first_name . ' ' . $last_name; ?></p>
+    <?php if( '' != $designation ): ?>
+      <p class='user-designation'><?php echo $designation; ?></p>
+    <?php endif; ?>
+    <?php if( '' != $video_embed ): ?>
+      <div class="user-video-embed">
+        <?php echo $video_embed; ?>
+      </div>
+    <?php endif; ?>
     <p class="user-description"><?php echo $bio; ?></p>
   </section>
 </div>
